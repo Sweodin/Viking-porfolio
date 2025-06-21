@@ -1,0 +1,58 @@
+/* src/components/sections/Contact.css */
+.contact-container {
+  @apply flex flex-col items-center text-center max-w-2xl mx-auto;
+}
+
+.contact-title-wrapper {
+  @apply flex items-center mb-6 sm:mb-8;
+}
+
+.contact-icon {
+  @apply text-brand-gold text-3xl sm:text-4xl mr-3 sm:mr-4;
+}
+
+.contact-title {
+  @apply font-sans text-brand-gold uppercase tracking-widest text-2xl sm:text-3xl font-bold;
+}
+
+.contact-description {
+  @apply font-sans text-brand-text-light text-base sm:text-lg leading-relaxed mb-10 sm:mb-12;
+}
+
+.contact-form {
+  @apply w-full space-y-6;
+}
+
+.contact-label {
+  @apply block font-sans text-brand-text-light text-sm font-medium mb-2 text-left;
+}
+
+.contact-input,
+.contact-textarea {
+  @apply w-full px-4 py-3 bg-brand-bg border border-brand-gold/50 rounded-sm text-brand-text-light placeholder-brand-text-light/50 transition-colors duration-300;
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+  @apply focus:outline-none focus:ring-2 focus:ring-brand-gold focus:border-brand-gold;
+}
+
+.contact-textarea {
+  @apply resize-none;
+}
+
+.contact-button-wrapper {
+  @apply text-center pt-2;
+}
+
+.contact-button {
+  @apply font-sans text-brand-gold uppercase tracking-wider border border-brand-gold px-8 py-3 text-sm sm:text-base rounded-sm transition-colors duration-300;
+}
+
+.contact-button:hover {
+  @apply hover:bg-brand-gold hover:text-brand-bg;
+}
+
+.contact-button:focus {
+  @apply focus:outline-none focus:ring-2 focus:ring-brand-gold focus:ring-opacity-50;
+}

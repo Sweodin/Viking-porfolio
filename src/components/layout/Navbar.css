@@ -1,0 +1,45 @@
+/* Base Navbar Styling */
+.navbar {
+  @apply w-full py-6 sm:py-8 fixed top-0 left-0 z-20 transition-all duration-300 ease-in-out;
+  background-color: transparent;
+  border-bottom: 1px solid transparent;
+}
+
+/* Scrolled State - The "Obsidian Glass" Effect */
+.navbar.scrolled {
+  @apply py-4 sm:py-5 bg-brand-bg bg-opacity-75 shadow-lg;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  border-bottom: 1px solid rgba(197, 165, 120, 0.2); /* Faint gold border */
+}
+
+.navbar-container {
+  @apply container mx-auto px-4 flex justify-between items-center max-w-[1200px];
+}
+
+/* Navigation Link Styling */
+.nav-link {
+  @apply font-sans text-brand-gold uppercase tracking-wider text-xs sm:text-sm relative;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Hover Effect - Runic Glow & Underline */
+.nav-link:hover {
+  @apply text-white;
+  text-shadow: 0 0 8px rgba(197, 165, 120, 0.7);
+}
+
+.nav-link::after {
+  content: '';
+  @apply absolute bottom-[-4px] left-1/2 w-0 h-[1px] bg-brand-gold transition-all duration-300 ease-out;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  @apply w-full;
+}
+
+/* Mobile Menu Button */
+.mobile-menu-button {
+  @apply text-brand-gold hover:text-white focus:outline-none transition-colors duration-300;
+}

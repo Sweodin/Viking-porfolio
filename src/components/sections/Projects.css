@@ -1,0 +1,49 @@
+/* src/components/sections/Projects.css */
+.projects-title {
+  @apply font-sans text-brand-gold uppercase tracking-widest text-2xl sm:text-3xl font-bold mb-12 sm:mb-16 text-center;
+}
+
+.projects-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 w-full max-w-4xl px-4;
+}
+
+.project-card {
+  @apply bg-brand-bg border border-brand-gold rounded-sm p-6 flex flex-col;
+  @apply transform transition-transform duration-300;
+}
+
+.project-card:hover {
+  @apply shadow-2xl shadow-brand-gold/20;
+}
+
+.project-image {
+  @apply w-full h-auto object-cover mb-4 rounded-sm;
+}
+
+.project-card-content {
+  @apply flex flex-col flex-grow;
+}
+
+.project-card-title {
+  @apply font-sans text-brand-gold uppercase tracking-wider text-xl font-semibold mb-2;
+}
+
+.project-description {
+  @apply font-sans text-brand-text-light text-sm mb-4 leading-relaxed h-20 overflow-y-auto;
+}
+
+.project-links {
+  @apply mt-auto flex gap-4 pt-4;
+}
+
+.project-button {
+  @apply font-sans text-brand-gold uppercase tracking-wider border border-brand-gold px-4 py-2 text-xs transition-colors duration-300;
+}
+
+.project-button:hover {
+  @apply hover:bg-brand-gold hover:text-brand-bg;
+}
+
+.project-button:focus {
+  @apply focus:outline-none focus:ring-2 focus:ring-brand-gold focus:ring-opacity-50;
+}

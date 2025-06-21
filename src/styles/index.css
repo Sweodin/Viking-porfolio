@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+@import "../components/sections/About.css";
+@import "../components/sections/Contact.css";
+@import "../components/sections/Projects.css";
+@import "../components/sections/Skills.css";
+@import "../components/sections/Welcome.css";
+@import '../components/ui/Logo.css';
+@import '../components/layout/Navbar.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-brand-bg text-brand-text-light font-sans antialiased;
+  background-image: url('/assets/dark-wood-bg.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}

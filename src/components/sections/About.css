@@ -1,0 +1,36 @@
+/* src/components/sections/About.css */
+.about-container {
+  @apply flex flex-col items-center text-center max-w-3xl mx-auto;
+}
+
+.about-title-wrapper {
+  @apply flex items-center mb-8 sm:mb-10;
+}
+
+.about-icon {
+  @apply text-brand-gold text-3xl sm:text-4xl mr-3 sm:mr-4;
+}
+
+.about-title {
+  @apply font-sans text-brand-gold uppercase tracking-widest text-2xl sm:text-3xl font-bold;
+}
+
+.about-image {
+  @apply w-56 h-56 sm:w-64 sm:h-64 rounded-full object-cover mb-8 sm:mb-10 border-2 border-brand-gold/50 shadow-lg;
+}
+
+.about-text {
+  @apply font-sans text-brand-text-light text-base sm:text-lg leading-relaxed;
+}
+
+.about-button {
+  @apply font-sans text-brand-gold uppercase tracking-wider border border-brand-gold px-8 py-3 text-xs sm:text-sm rounded-sm transition-colors duration-300;
+}
+
+.about-button:hover {
+  @apply hover:bg-brand-gold hover:text-brand-bg;
+}
+
+.about-button:focus {
+  @apply focus:outline-none focus:ring-2 focus:ring-brand-gold focus:ring-opacity-50;
+}

@@ -1,0 +1,30 @@
+<svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">Peter Gustafsson Logo</title>
+  <desc id="logoDesc">A Viking-inspired runic monogram of the letters P and G in gold, revised for clarity.</desc>
+
+  <defs>
+    <style>
+      .logo-bg { fill: #161616; }
+      .logo-stroke { stroke: #c5a578; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+    </style>
+  </defs>
+
+  <!-- Optional: Background Circle -->
+  <circle id="logo-background-circle" class="logo-bg" cx="50" cy="50" r="48"/>
+
+  <!-- Main Runic PG Monogram - Revised for Clarity -->
+  <g id="monogram-pg">
+    <!-- Shared Stem -->
+    <path id="rune-shared-stem" class="logo-stroke" d="M40 20 V 80" />
+    
+    <!-- The 'P' shape (top half) -->
+    <path id="rune-p-bowl" class="logo-stroke" d="M40 20 C 70 20, 70 50, 40 50" />
+
+    <!-- The 'G' shape (bottom half) -->
+    <path id="rune-g-curve" class="logo-stroke" d="M40 80 C 70 80, 70 55, 55 55" />
+    <path id="rune-g-bar" class="logo-stroke" d="M55 65 H 40" />
+  </g>
+
+  <!-- Outer Circle Border -->
+  <circle id="logo-border-circle" class="logo-stroke" cx="50" cy="50" r="46" style="stroke-width: 2;"/>
+</svg>

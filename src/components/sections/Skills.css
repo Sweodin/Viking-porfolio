@@ -1,0 +1,36 @@
+/* src/components/sections/Skills.css */
+.skills-container {
+  @apply flex flex-col items-center text-center max-w-4xl mx-auto;
+}
+
+.skills-title-container {
+  @apply flex items-center mb-6 sm:mb-8;
+}
+
+.skills-icon {
+  @apply text-brand-gold text-3xl sm:text-4xl mr-3 sm:mr-4;
+}
+
+.skills-title {
+  @apply font-sans text-brand-gold uppercase tracking-widest text-2xl sm:text-3xl font-bold;
+}
+
+.skills-description {
+  @apply font-sans text-brand-text-light text-base sm:text-lg leading-relaxed mb-10 sm:mb-12;
+}
+
+.skills-grid {
+  @apply flex flex-wrap justify-center gap-3 sm:gap-4;
+}
+
+.skill-tag {
+  @apply bg-brand-bg border border-brand-gold/50 rounded-sm px-4 py-2 sm:px-5 sm:py-2.5 transform transition-all duration-300;
+}
+
+.skill-tag:hover {
+  @apply hover:bg-brand-gold/10 hover:border-brand-gold;
+}
+
+.skill-name {
+  @apply font-sans text-brand-text-light text-sm sm:text-base;
+}
