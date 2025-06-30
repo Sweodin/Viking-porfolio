@@ -48,10 +48,10 @@ const Skills: React.FC = () => {
       <div className="skills-container">
         <div className="skills-title-container">
           <FaLaptopCode className="skills-icon" />
-          <h2 className="skills-title">My Arsenal</h2>
+          <h2 className="skills-title">Min Arsenal</h2>
         </div>
         <p className="skills-description">
-          With a diverse toolkit and a commitment to mastery, I leverage cutting-edge technologies to forge robust and scalable solutions. Each skill is a testament to my dedication to excellence and continuous learning in the ever-evolving digital landscape.
+          Med en mångsidig verktygslåda och ett engagemang för mästerskap, använder jag spetsteknologi för att skapa robusta och skalbara lösningar. Varje färdighet är ett bevis på mitt engagemang för excellens och kontinuerligt lärande i det ständigt föränderliga digitala landskapet.
         </p>
         <motion.div 
           className="skills-grid"

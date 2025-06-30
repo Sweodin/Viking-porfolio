@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaLinkedin, FaGithub, FaBriefcase } from 'react-icons/fa'; // Example social icons
+import { FaLinkedin, FaGithub } from 'react-icons/fa'; // Example social icons
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
