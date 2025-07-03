@@ -25,7 +25,11 @@ const Card: React.FC<CardProps> = ({ project }) => {
       <div className="project-card-content">
         <h3 className="project-card-title">{project.title}</h3>
         <div className="project-description">
-          {isRichText(project.description) && documentToReactComponents(project.description)}
+          {project.description &&
+            (isRichText(project.description)
+              ? documentToReactComponents(project.description)
+              : <p>{project.description as string}</p>)
+          }
         </div>
         <div className="project-links">
           {project.liveUrl && (
