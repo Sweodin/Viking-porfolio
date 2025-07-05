@@ -6,12 +6,12 @@ const Footer: React.FC = () => {
 
   const socialLinks = [
     {
-      href: 'https://www.linkedin.com/in/yourprofile', // Replace with your LinkedIn URL
+      href: 'https://www.linkedin.com/in/peter-gustafsson-3206a8108', // Replace with your LinkedIn URL
       icon: <FaLinkedin className="h-5 w-5 sm:h-6 sm:w-6" />,
       label: 'LinkedIn Profile'
     },
     {
-      href: 'https://github.com/yourusername', // Replace with your GitHub URL
+      href: 'https://github.com/Sweodin', // Replace with your GitHub URL
       icon: <FaGithub className="h-5 w-5 sm:h-6 sm:w-6" />,
       label: 'GitHub Profile'
     },

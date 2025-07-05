@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Logo from '@/components/ui/Logo';
+import logoImage from '@/assets/images/logo-png.png';
 import { FaBars, FaTimes } from 'react-icons/fa'; // Icons for hamburger and close
 
 const navItems = [
@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
       <div className="navbar-container">
         {/* Logo */}
         <a href="#welcome" aria-label="Homepage" onClick={() => isMobileMenuOpen && toggleMobileMenu()}>
-          <Logo className="h-10 sm:h-12 w-auto" /> 
+          <img src={logoImage} alt="Site Logo" className="h-10 sm:h-12 w-auto" /> 
         </a>
 
         {/* Desktop Navigation Links */}
