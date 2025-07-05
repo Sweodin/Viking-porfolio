@@ -5,6 +5,7 @@ import type { Document } from '@contentful/rich-text-types';
 export interface IProjectFields {
   title: string;
   description: Document;
+  techStack?: string[];
   tags?: string[];
   image?: Asset<'WITHOUT_UNRESOLVABLE_LINKS'>;
   liveUrl?: string;
