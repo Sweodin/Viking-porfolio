@@ -12,6 +12,7 @@ const navItems = [
 const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState<string>('');
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -21,15 +22,37 @@ const Navbar: React.FC = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(`#${entry.target.id}`);
+          }
+        });
+      },
+      { rootMargin: '-50% 0px -50% 0px' } // Triggers when the section is in the middle of the viewport
+    );
+
+    const sections = document.querySelectorAll('section[id]');
+    sections.forEach((section) => observer.observe(section));
+
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      sections.forEach((section) => observer.unobserve(section));
+    };
   }, []);
 
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
         {/* Logo */}
-        <a href="#welcome" aria-label="Homepage" onClick={() => isMobileMenuOpen && toggleMobileMenu()}>
+        <a href="#welcome" aria-label="Homepage" onClick={() => {
+          setActiveSection('#welcome');
+          if (isMobileMenuOpen) toggleMobileMenu();
+        }}>
           <img src={logoImage} alt="Site Logo" className="h-10 sm:h-12 w-auto" /> 
         </a>
 
@@ -39,7 +62,7 @@ const Navbar: React.FC = () => {
             <a 
               key={item.label}
               href={item.href} 
-              className="nav-link"
+              className={`nav-link ${activeSection === item.href ? 'active' : ''}`}
             >
               {item.label}
             </a>

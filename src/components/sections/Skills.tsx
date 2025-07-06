@@ -28,17 +28,18 @@ const itemVariants = {
 
 // Sample skills data - you can expand this or move it to a JSON file
 const skillsData: Skill[] = [
+  { name: 'HTML & Bootstrap', level: 0 },
+  { name: 'Wordpress & Figma', level: 0 },
   { name: 'JavaScript (ES6+)', level: 0 }, // Level can be omitted if not used for styling
   { name: 'TypeScript', level: 0 },
   { name: 'React & Next.js', level: 0 },
   { name: 'Node.js & Express', level: 0 },
-  { name: 'Python & Django', level: 0 },
+  { name: 'C# & MongoDB', level: 0 },
   { name: 'SQL & NoSQL Databases', level: 0 },
   { name: 'RESTful APIs & GraphQL', level: 0 },
-  { name: 'Docker & Kubernetes', level: 0 },
+  { name: 'Docker', level: 0 },
   { name: 'Git & CI/CD', level: 0 },
   { name: 'Tailwind CSS & SASS', level: 0 },
-  { name: 'Cloud Platforms (AWS/Azure/GCP)', level: 0 },
   { name: 'Agile Methodologies', level: 0 },
 ];
 

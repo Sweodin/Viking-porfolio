@@ -24,7 +24,8 @@
 }
 
 /* Hover Effect - Runic Glow & Underline */
-.nav-link:hover {
+.nav-link:hover,
+.nav-link.active {
   @apply text-white;
   text-shadow: 0 0 8px rgba(197, 165, 120, 0.7);
 }
@@ -35,7 +36,8 @@
   transform: translateX(-50%);
 }
 
-.nav-link:hover::after {
+.nav-link:hover::after,
+.nav-link.active::after {
   @apply w-full;
 }
 

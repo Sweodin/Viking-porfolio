@@ -19,7 +19,7 @@ const Card = React.forwardRef<HTMLDivElement, CardProps>(({ project, ...props },
       <div className="project-card-content">
         {imageUrl && imageDetails && (
           <img
-            src={'https:' + imageUrl}
+            src={`https:${imageUrl}?fm=webp&w=800`}
             alt={imageDescription || project.title}
             className="project-image"
             width={imageDetails.width}
