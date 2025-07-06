@@ -1,5 +1,6 @@
 # Peter Gustafsson Portfolio
 
+
 ![Viking Portfolio Banner](https://via.placeholder.com/1200x300.png?text=Viking+Portfolio) <!-- Replace with a real banner image -->
 
 Welcome to my Viking-themed personal portfolio. This project showcases my skills in modern web development, featuring a dynamic project gallery managed via Contentful, smooth animations, and a responsive, dark-themed design inspired by Norse aesthetics.
