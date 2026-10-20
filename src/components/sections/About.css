@@ -34,3 +34,52 @@
 .about-button:focus {
   @apply focus:outline-none focus:ring-2 focus:ring-brand-gold focus:ring-opacity-50;
 }
+
+/* Current role card */
+.about-role {
+  @apply w-full text-left bg-brand-bg/80 border border-brand-gold/40 rounded-sm p-6 sm:p-8 mb-10 sm:mb-12 shadow-lg;
+}
+
+.about-role-label {
+  @apply font-sans text-brand-gold/80 uppercase tracking-widest text-xs mb-2;
+}
+
+.about-role-title {
+  @apply font-sans text-brand-gold text-xl sm:text-2xl font-bold;
+}
+
+.about-role-meta {
+  @apply font-sans text-brand-text-light/70 text-sm mt-1 mb-6;
+}
+
+.about-role-list {
+  @apply flex flex-col gap-5 mb-6;
+}
+
+.about-role-list li {
+  @apply font-sans text-brand-text-light text-sm sm:text-base leading-relaxed border-l-2 border-brand-gold/50 pl-4;
+}
+
+.about-role-item-title {
+  @apply flex flex-wrap items-center gap-x-3 gap-y-1 font-semibold text-brand-gold mb-1;
+}
+
+.about-role-link {
+  @apply inline-flex items-center gap-1 text-xs font-normal text-brand-text-light/80 underline underline-offset-2 transition-colors duration-300;
+}
+
+.about-role-link:hover {
+  @apply text-brand-gold;
+}
+
+.about-role-link:focus-visible {
+  @apply outline-none ring-2 ring-brand-gold ring-opacity-50 rounded-sm;
+}
+
+.about-role-stack {
+  @apply flex flex-wrap gap-2;
+}
+
+.about-role-chip {
+  @apply bg-brand-gold/10 text-brand-gold text-xs font-medium px-2.5 py-1 rounded-full;
+}

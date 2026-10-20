@@ -23,6 +23,11 @@ const Projects: React.FC = () => {
 
   useEffect(() => {
     const fetchProjects = async () => {
+      if (!contentfulClient) {
+        setError('Projects are unavailable – Contentful is not configured.');
+        setLoading(false);
+        return;
+      }
       setLoading(true);
       try {
         const response = await contentfulClient.withoutUnresolvableLinks.getEntries<ProjectEntrySkeleton>({
